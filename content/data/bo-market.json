@@ -1,0 +1,162 @@
+{
+  "snapshot_date": "2026-11-13",
+  "source": "Casa-Libre Bolivia active listings (asking prices published on casa-libre.com.bo; not closing prices)",
+  "bob_per_usd": 6.89,
+  "total_active": 388,
+  "cities": {
+    "santa-cruz-de-la-sierra": {
+      "name": "Santa Cruz de la Sierra",
+      "for_sale": {
+        "total": 180,
+        "casas": 56,
+        "departamentos": 86,
+        "duplex": 0,
+        "terrenos": 4
+      },
+      "for_rent": {
+        "total": 73,
+        "casas": 7,
+        "departamentos": 47
+      },
+      "casas_venta_price": {
+        "listings_with_price": 56,
+        "median_usd": 145500,
+        "p25_usd": 104000,
+        "p75_usd": 271500
+      },
+      "terrenos_venta_price": null,
+      "departamentos_venta_price": {
+        "listings_with_price": 84,
+        "median_usd": 73500,
+        "p25_usd": 59000,
+        "p75_usd": 109500
+      },
+      "casas_alquiler_price_month": {
+        "listings_with_price": 6,
+        "median_usd": 1480,
+        "p25_usd": 1110,
+        "p75_usd": 1680
+      },
+      "departamentos_alquiler_price_month": {
+        "listings_with_price": 46,
+        "median_usd": 570,
+        "p25_usd": 400,
+        "p75_usd": 800
+      },
+      "terreno_usd_per_m2_median": null,
+      "casas_venta_median_bedrooms": 4,
+      "casa_gross_rent_yield_pct": 12.2,
+      "departamento_gross_rent_yield_pct": 9.3,
+      "casa_libre_pages": [
+        "/alquiler/casas/santa-cruz-de-la-sierra",
+        "/alquiler/departamentos/santa-cruz-de-la-sierra",
+        "/alquiler/oficinas/santa-cruz-de-la-sierra",
+        "/venta/casas/santa-cruz-de-la-sierra",
+        "/venta/departamentos/santa-cruz-de-la-sierra",
+        "/venta/depositos/santa-cruz-de-la-sierra",
+        "/venta/locales/santa-cruz-de-la-sierra",
+        "/venta/terrenos/santa-cruz-de-la-sierra",
+        "/propiedades-en/santa-cruz-de-la-sierra"
+      ]
+    },
+    "cochabamba": {
+      "name": "Cochabamba",
+      "for_sale": {
+        "total": 29,
+        "casas": 8,
+        "departamentos": 13,
+        "duplex": 0,
+        "terrenos": 1
+      },
+      "for_rent": {
+        "total": 3,
+        "casas": 1,
+        "departamentos": 0
+      },
+      "casas_venta_price": {
+        "listings_with_price": 8,
+        "median_usd": 167500,
+        "p25_usd": 158000,
+        "p75_usd": 229000
+      },
+      "terrenos_venta_price": null,
+      "departamentos_venta_price": {
+        "listings_with_price": 13,
+        "median_usd": 130000,
+        "p25_usd": 59000,
+        "p75_usd": 156000
+      },
+      "casas_alquiler_price_month": null,
+      "departamentos_alquiler_price_month": null,
+      "terreno_usd_per_m2_median": null,
+      "casas_venta_median_bedrooms": 4,
+      "casa_gross_rent_yield_pct": null,
+      "departamento_gross_rent_yield_pct": null,
+      "casa_libre_pages": [
+        "/alquiler/casas/cochabamba",
+        "/alquiler/oficinas/cochabamba",
+        "/venta/casas/cochabamba",
+        "/venta/departamentos/cochabamba",
+        "/venta/oficinas/cochabamba",
+        "/venta/terrenos/cochabamba",
+        "/propiedades-en/cochabamba"
+      ]
+    },
+    "la-paz": {
+      "name": "La Paz",
+      "for_sale": {
+        "total": 20,
+        "casas": 5,
+        "departamentos": 13,
+        "duplex": 0,
+        "terrenos": 0
+      },
+      "for_rent": {
+        "total": 10,
+        "casas": 0,
+        "departamentos": 6
+      },
+      "casas_venta_price": {
+        "listings_with_price": 5,
+        "median_usd": 220000,
+        "p25_usd": 200000,
+        "p75_usd": 360000
+      },
+      "terrenos_venta_price": null,
+      "departamentos_venta_price": {
+        "listings_with_price": 13,
+        "median_usd": 112500,
+        "p25_usd": 84000,
+        "p75_usd": 135000
+      },
+      "casas_alquiler_price_month": null,
+      "departamentos_alquiler_price_month": {
+        "listings_with_price": 5,
+        "median_usd": 730,
+        "p25_usd": 650,
+        "p75_usd": 760
+      },
+      "terreno_usd_per_m2_median": null,
+      "casas_venta_median_bedrooms": 4,
+      "casa_gross_rent_yield_pct": null,
+      "departamento_gross_rent_yield_pct": 7.8,
+      "casa_libre_pages": [
+        "/alquiler/departamentos/la-paz",
+        "/alquiler/oficinas/la-paz",
+        "/venta/casas/la-paz",
+        "/venta/departamentos/la-paz",
+        "/propiedades-en/la-paz"
+      ]
+    }
+  },
+  "notes": [
+    "Asking prices of listings published on Casa-Libre, not closing prices.",
+    "Medians and ranges only where at least 5 listings have a price; null = too few to say.",
+    "gross_rent_yield_pct = median monthly rent x 12 / median sale price, same city and type. A rough comparison of asking prices, not a return on investment.",
+    "A city is listed only with at least 15 active listings. Barrios or zones that listings store as the city are counted in their city (scripts/build-market.mjs, CITY_RULES).",
+    "USD prices are rounded: from USD 10,000 to the nearest 500, below that to the nearest 10. The price per m2 is rounded to the dollar.",
+    "Price statistics leave out obvious errors: sale prices under USD 1,000 and monthly rents outside USD 30 to 30,000 (they still count in the listing totals).",
+    "USD figures come from each listing's price_usd. Listings priced in bolivianos without price_usd were converted at bob_per_usd = 6.89 (the median price / price_usd of this country's 125 BOB listings, i.e. the rate Casa-Libre used when they were saved). Reference market rate on 2026-11-13: 11.82 BOB per USD (open.er-api.com). Any conversion to bolivianos is approximate: say so.",
+    "casa_libre_pages = Casa-Libre city pages that answered 200 to a GET when the snapshot was built; link only these (or the filtered search)."
+  ]
+}

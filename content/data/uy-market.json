@@ -1,0 +1,196 @@
+{
+  "snapshot_date": "2026-11-13",
+  "source": "Casa-Libre Uruguay active listings (asking prices published on uy.casa-libre.com; not closing prices)",
+  "uyu_per_usd": 40.3,
+  "total_active": 514,
+  "cities": {
+    "montevideo": {
+      "name": "Montevideo",
+      "for_sale": {
+        "total": 236,
+        "casas": 34,
+        "departamentos": 171,
+        "duplex": 6,
+        "terrenos": 4
+      },
+      "for_rent": {
+        "total": 101,
+        "casas": 11,
+        "departamentos": 69
+      },
+      "casas_venta_price": {
+        "listings_with_price": 34,
+        "median_usd": 170000,
+        "p25_usd": 110500,
+        "p75_usd": 226500
+      },
+      "terrenos_venta_price": null,
+      "departamentos_venta_price": {
+        "listings_with_price": 171,
+        "median_usd": 155000,
+        "p25_usd": 122000,
+        "p75_usd": 196500
+      },
+      "casas_alquiler_price_month": {
+        "listings_with_price": 11,
+        "median_usd": 680,
+        "p25_usd": 470,
+        "p75_usd": 870
+      },
+      "departamentos_alquiler_price_month": {
+        "listings_with_price": 68,
+        "median_usd": 750,
+        "p25_usd": 640,
+        "p75_usd": 1100
+      },
+      "terreno_usd_per_m2_median": null,
+      "casas_venta_median_bedrooms": 3,
+      "casa_gross_rent_yield_pct": 4.8,
+      "departamento_gross_rent_yield_pct": 5.8,
+      "casa_libre_pages": [
+        "/alquiler/casas/montevideo",
+        "/alquiler/departamentos/montevideo",
+        "/alquiler/depositos/montevideo",
+        "/alquiler/locales/montevideo",
+        "/alquiler/oficinas/montevideo",
+        "/venta/casas/montevideo",
+        "/venta/departamentos/montevideo",
+        "/venta/depositos/montevideo",
+        "/venta/duplex/montevideo",
+        "/venta/locales/montevideo",
+        "/venta/terrenos/montevideo",
+        "/propiedades-en/montevideo"
+      ]
+    },
+    "punta-del-este": {
+      "name": "Punta del Este",
+      "for_sale": {
+        "total": 13,
+        "casas": 1,
+        "departamentos": 11,
+        "duplex": 0,
+        "terrenos": 0
+      },
+      "for_rent": {
+        "total": 12,
+        "casas": 0,
+        "departamentos": 8
+      },
+      "casas_venta_price": null,
+      "terrenos_venta_price": null,
+      "departamentos_venta_price": {
+        "listings_with_price": 11,
+        "median_usd": 245000,
+        "p25_usd": 196000,
+        "p75_usd": 302500
+      },
+      "casas_alquiler_price_month": null,
+      "departamentos_alquiler_price_month": {
+        "listings_with_price": 8,
+        "median_usd": 910,
+        "p25_usd": 820,
+        "p75_usd": 1530
+      },
+      "terreno_usd_per_m2_median": null,
+      "casas_venta_median_bedrooms": null,
+      "casa_gross_rent_yield_pct": null,
+      "departamento_gross_rent_yield_pct": 4.5,
+      "casa_libre_pages": [
+        "/alquiler/departamentos/punta-del-este",
+        "/alquiler/duplex/punta-del-este",
+        "/alquiler/locales/punta-del-este",
+        "/alquiler/oficinas/punta-del-este",
+        "/venta/casas/punta-del-este",
+        "/venta/departamentos/punta-del-este",
+        "/venta/oficinas/punta-del-este",
+        "/propiedades-en/punta-del-este"
+      ]
+    },
+    "maldonado": {
+      "name": "Maldonado",
+      "for_sale": {
+        "total": 20,
+        "casas": 3,
+        "departamentos": 15,
+        "duplex": 0,
+        "terrenos": 1
+      },
+      "for_rent": {
+        "total": 4,
+        "casas": 2,
+        "departamentos": 1
+      },
+      "casas_venta_price": null,
+      "terrenos_venta_price": null,
+      "departamentos_venta_price": {
+        "listings_with_price": 15,
+        "median_usd": 150000,
+        "p25_usd": 121500,
+        "p75_usd": 204000
+      },
+      "casas_alquiler_price_month": null,
+      "departamentos_alquiler_price_month": null,
+      "terreno_usd_per_m2_median": null,
+      "casas_venta_median_bedrooms": null,
+      "casa_gross_rent_yield_pct": null,
+      "departamento_gross_rent_yield_pct": null,
+      "casa_libre_pages": [
+        "/alquiler/casas/maldonado",
+        "/alquiler/departamentos/maldonado",
+        "/alquiler/locales/maldonado",
+        "/venta/casas/maldonado",
+        "/venta/departamentos/maldonado",
+        "/venta/terrenos/maldonado",
+        "/propiedades-en/maldonado"
+      ]
+    },
+    "ciudad-de-la-costa": {
+      "name": "Ciudad de la Costa",
+      "for_sale": {
+        "total": 20,
+        "casas": 13,
+        "departamentos": 5,
+        "duplex": 0,
+        "terrenos": 1
+      },
+      "for_rent": {
+        "total": 3,
+        "casas": 2,
+        "departamentos": 0
+      },
+      "casas_venta_price": {
+        "listings_with_price": 13,
+        "median_usd": 268000,
+        "p25_usd": 230000,
+        "p75_usd": 315000
+      },
+      "terrenos_venta_price": null,
+      "departamentos_venta_price": {
+        "listings_with_price": 5,
+        "median_usd": 238000,
+        "p25_usd": 215000,
+        "p75_usd": 270500
+      },
+      "casas_alquiler_price_month": null,
+      "departamentos_alquiler_price_month": null,
+      "terreno_usd_per_m2_median": null,
+      "casas_venta_median_bedrooms": 3,
+      "casa_gross_rent_yield_pct": null,
+      "departamento_gross_rent_yield_pct": null,
+      "casa_libre_pages": [
+        "/alquiler/casas/ciudad-de-la-costa",
+        "/propiedades-en/ciudad-de-la-costa"
+      ]
+    }
+  },
+  "notes": [
+    "Asking prices of listings published on Casa-Libre, not closing prices.",
+    "Medians and ranges only where at least 5 listings have a price; null = too few to say.",
+    "gross_rent_yield_pct = median monthly rent x 12 / median sale price, same city and type. A rough comparison of asking prices, not a return on investment.",
+    "A city is listed only with at least 15 active listings. Barrios or zones that listings store as the city are counted in their city (scripts/build-market.mjs, CITY_RULES).",
+    "USD prices are rounded: from USD 10,000 to the nearest 500, below that to the nearest 10. The price per m2 is rounded to the dollar.",
+    "Price statistics leave out obvious errors: sale prices under USD 1,000 and monthly rents outside USD 30 to 30,000 (they still count in the listing totals).",
+    "USD figures come from each listing's price_usd. Listings priced in pesos uruguayos without price_usd were converted at uyu_per_usd = 40.3 (the median price / price_usd of this country's 114 UYU listings, i.e. the rate Casa-Libre used when they were saved). Reference market rate on 2026-11-13: 40.79 UYU per USD (open.er-api.com). Any conversion to pesos uruguayos is approximate: say so.",
+    "casa_libre_pages = Casa-Libre city pages that answered 200 to a GET when the snapshot was built; link only these (or the filtered search)."
+  ]
+}

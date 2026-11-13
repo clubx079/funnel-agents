@@ -1,0 +1,9 @@
+node_modules
+.next
+.next-build
+_*.html
+_code.txt
+out
+.env*.local
+*.log
+/data/

@@ -1,0 +1,648 @@
+{
+  "snapshot_date": "2026-11-12",
+  "source": "Casa-Libre Paraguay active listings (asking prices published on casa-libre.com.py; not closing prices)",
+  "pyg_per_usd": 7300,
+  "total_active": 2665,
+  "cities": {
+    "asuncion": {
+      "name": "Asunción",
+      "for_sale": {
+        "total": 234,
+        "casas": 78,
+        "departamentos": 109,
+        "duplex": 10,
+        "terrenos": 11
+      },
+      "for_rent": {
+        "total": 239,
+        "casas": 20,
+        "departamentos": 151
+      },
+      "casas_venta_price": {
+        "listings_with_price": 73,
+        "median_usd": 275000,
+        "p25_usd": 150000,
+        "p75_usd": 490000
+      },
+      "terrenos_venta_price": {
+        "listings_with_price": 11,
+        "median_usd": 334000,
+        "p25_usd": 242000,
+        "p75_usd": 625500
+      },
+      "departamentos_venta_price": {
+        "listings_with_price": 103,
+        "median_usd": 135000,
+        "p25_usd": 96000,
+        "p75_usd": 218000
+      },
+      "casas_alquiler_price_month": {
+        "listings_with_price": 20,
+        "median_usd": 2100,
+        "p25_usd": 1250,
+        "p75_usd": 2580
+      },
+      "departamentos_alquiler_price_month": {
+        "listings_with_price": 150,
+        "median_usd": 880,
+        "p25_usd": 650,
+        "p75_usd": 1200
+      },
+      "terreno_usd_per_m2_median": 592,
+      "casas_venta_median_bedrooms": 4,
+      "casa_gross_rent_yield_pct": 9.2,
+      "departamento_gross_rent_yield_pct": 7.8,
+      "casa_libre_pages": [
+        "/alquiler/casas/asuncion",
+        "/alquiler/departamentos/asuncion",
+        "/alquiler/depositos/asuncion",
+        "/alquiler/duplex/asuncion",
+        "/alquiler/locales/asuncion",
+        "/alquiler/oficinas/asuncion",
+        "/venta/casas/asuncion",
+        "/venta/departamentos/asuncion",
+        "/venta/depositos/asuncion",
+        "/venta/duplex/asuncion",
+        "/venta/oficinas/asuncion",
+        "/propiedades-en/asuncion"
+      ]
+    },
+    "luque": {
+      "name": "Luque",
+      "for_sale": {
+        "total": 177,
+        "casas": 69,
+        "departamentos": 53,
+        "duplex": 23,
+        "terrenos": 12
+      },
+      "for_rent": {
+        "total": 68,
+        "casas": 20,
+        "departamentos": 32
+      },
+      "casas_venta_price": {
+        "listings_with_price": 67,
+        "median_usd": 89000,
+        "p25_usd": 59000,
+        "p75_usd": 151000
+      },
+      "terrenos_venta_price": {
+        "listings_with_price": 11,
+        "median_usd": 41000,
+        "p25_usd": 25000,
+        "p75_usd": 143500
+      },
+      "departamentos_venta_price": {
+        "listings_with_price": 47,
+        "median_usd": 73000,
+        "p25_usd": 55000,
+        "p75_usd": 94000
+      },
+      "casas_alquiler_price_month": {
+        "listings_with_price": 15,
+        "median_usd": 920,
+        "p25_usd": 500,
+        "p75_usd": 1300
+      },
+      "departamentos_alquiler_price_month": {
+        "listings_with_price": 31,
+        "median_usd": 490,
+        "p25_usd": 440,
+        "p75_usd": 540
+      },
+      "terreno_usd_per_m2_median": 64,
+      "casas_venta_median_bedrooms": 2,
+      "casa_gross_rent_yield_pct": 12.4,
+      "departamento_gross_rent_yield_pct": 8.1,
+      "casa_libre_pages": [
+        "/alquiler/casas/luque",
+        "/alquiler/departamentos/luque",
+        "/alquiler/duplex/luque",
+        "/venta/casas/luque",
+        "/venta/departamentos/luque",
+        "/venta/duplex/luque",
+        "/propiedades-en/luque"
+      ]
+    },
+    "san-lorenzo": {
+      "name": "San Lorenzo",
+      "for_sale": {
+        "total": 82,
+        "casas": 40,
+        "departamentos": 21,
+        "duplex": 6,
+        "terrenos": 6
+      },
+      "for_rent": {
+        "total": 26,
+        "casas": 3,
+        "departamentos": 12
+      },
+      "casas_venta_price": {
+        "listings_with_price": 39,
+        "median_usd": 79000,
+        "p25_usd": 61000,
+        "p75_usd": 162000
+      },
+      "terrenos_venta_price": {
+        "listings_with_price": 6,
+        "median_usd": 61000,
+        "p25_usd": 45000,
+        "p75_usd": 87500
+      },
+      "departamentos_venta_price": {
+        "listings_with_price": 16,
+        "median_usd": 86000,
+        "p25_usd": 83000,
+        "p75_usd": 120000
+      },
+      "casas_alquiler_price_month": null,
+      "departamentos_alquiler_price_month": {
+        "listings_with_price": 12,
+        "median_usd": 320,
+        "p25_usd": 280,
+        "p75_usd": 420
+      },
+      "terreno_usd_per_m2_median": null,
+      "casas_venta_median_bedrooms": 3,
+      "casa_gross_rent_yield_pct": null,
+      "departamento_gross_rent_yield_pct": 4.5,
+      "casa_libre_pages": [
+        "/alquiler/departamentos/san-lorenzo",
+        "/venta/casas/san-lorenzo",
+        "/venta/departamentos/san-lorenzo",
+        "/venta/duplex/san-lorenzo",
+        "/propiedades-en/san-lorenzo"
+      ]
+    },
+    "lambare": {
+      "name": "Lambaré",
+      "for_sale": {
+        "total": 47,
+        "casas": 31,
+        "departamentos": 5,
+        "duplex": 4,
+        "terrenos": 3
+      },
+      "for_rent": {
+        "total": 20,
+        "casas": 8,
+        "departamentos": 4
+      },
+      "casas_venta_price": {
+        "listings_with_price": 30,
+        "median_usd": 184000,
+        "p25_usd": 120000,
+        "p75_usd": 244000
+      },
+      "terrenos_venta_price": null,
+      "departamentos_venta_price": null,
+      "casas_alquiler_price_month": {
+        "listings_with_price": 8,
+        "median_usd": 950,
+        "p25_usd": 900,
+        "p75_usd": 1230
+      },
+      "departamentos_alquiler_price_month": null,
+      "terreno_usd_per_m2_median": null,
+      "casas_venta_median_bedrooms": 3,
+      "casa_gross_rent_yield_pct": 6.2,
+      "departamento_gross_rent_yield_pct": null,
+      "casa_libre_pages": [
+        "/alquiler/casas/lambare",
+        "/alquiler/duplex/lambare",
+        "/venta/casas/lambare",
+        "/venta/departamentos/lambare",
+        "/propiedades-en/lambare"
+      ]
+    },
+    "fernando-de-la-mora": {
+      "name": "Fernando de la Mora",
+      "for_sale": {
+        "total": 47,
+        "casas": 15,
+        "departamentos": 20,
+        "duplex": 5,
+        "terrenos": 4
+      },
+      "for_rent": {
+        "total": 37,
+        "casas": 4,
+        "departamentos": 18
+      },
+      "casas_venta_price": {
+        "listings_with_price": 15,
+        "median_usd": 149000,
+        "p25_usd": 134000,
+        "p75_usd": 346000
+      },
+      "terrenos_venta_price": null,
+      "departamentos_venta_price": {
+        "listings_with_price": 19,
+        "median_usd": 67000,
+        "p25_usd": 60000,
+        "p75_usd": 82000
+      },
+      "casas_alquiler_price_month": null,
+      "departamentos_alquiler_price_month": {
+        "listings_with_price": 18,
+        "median_usd": 550,
+        "p25_usd": 390,
+        "p75_usd": 580
+      },
+      "terreno_usd_per_m2_median": null,
+      "casas_venta_median_bedrooms": 4,
+      "casa_gross_rent_yield_pct": null,
+      "departamento_gross_rent_yield_pct": 9.9,
+      "casa_libre_pages": [
+        "/alquiler/departamentos/fernando-de-la-mora",
+        "/alquiler/duplex/fernando-de-la-mora",
+        "/alquiler/locales/fernando-de-la-mora",
+        "/venta/casas/fernando-de-la-mora",
+        "/venta/departamentos/fernando-de-la-mora",
+        "/venta/duplex/fernando-de-la-mora",
+        "/propiedades-en/fernando-de-la-mora"
+      ]
+    },
+    "capiata": {
+      "name": "Capiatá",
+      "for_sale": {
+        "total": 52,
+        "casas": 36,
+        "departamentos": 1,
+        "duplex": 0,
+        "terrenos": 12
+      },
+      "for_rent": {
+        "total": 2,
+        "casas": 1,
+        "departamentos": 1
+      },
+      "casas_venta_price": {
+        "listings_with_price": 35,
+        "median_usd": 56000,
+        "p25_usd": 49000,
+        "p75_usd": 78000
+      },
+      "terrenos_venta_price": {
+        "listings_with_price": 12,
+        "median_usd": 42000,
+        "p25_usd": 30000,
+        "p75_usd": 58500
+      },
+      "departamentos_venta_price": null,
+      "casas_alquiler_price_month": null,
+      "departamentos_alquiler_price_month": null,
+      "terreno_usd_per_m2_median": 47,
+      "casas_venta_median_bedrooms": 2,
+      "casa_gross_rent_yield_pct": null,
+      "departamento_gross_rent_yield_pct": null,
+      "casa_libre_pages": [
+        "/venta/casas/capiata",
+        "/propiedades-en/capiata"
+      ]
+    },
+    "mariano-roque-alonso": {
+      "name": "Mariano Roque Alonso",
+      "for_sale": {
+        "total": 45,
+        "casas": 17,
+        "departamentos": 11,
+        "duplex": 2,
+        "terrenos": 5
+      },
+      "for_rent": {
+        "total": 18,
+        "casas": 1,
+        "departamentos": 6
+      },
+      "casas_venta_price": {
+        "listings_with_price": 17,
+        "median_usd": 145000,
+        "p25_usd": 96000,
+        "p75_usd": 490000
+      },
+      "terrenos_venta_price": {
+        "listings_with_price": 5,
+        "median_usd": 100000,
+        "p25_usd": 38000,
+        "p75_usd": 188500
+      },
+      "departamentos_venta_price": {
+        "listings_with_price": 9,
+        "median_usd": 59000,
+        "p25_usd": 48000,
+        "p75_usd": 63000
+      },
+      "casas_alquiler_price_month": null,
+      "departamentos_alquiler_price_month": {
+        "listings_with_price": 6,
+        "median_usd": 520,
+        "p25_usd": 480,
+        "p75_usd": 720
+      },
+      "terreno_usd_per_m2_median": 100,
+      "casas_venta_median_bedrooms": 4,
+      "casa_gross_rent_yield_pct": null,
+      "departamento_gross_rent_yield_pct": 10.6,
+      "casa_libre_pages": [
+        "/alquiler/departamentos/mariano-roque-alonso",
+        "/alquiler/depositos/mariano-roque-alonso",
+        "/venta/casas/mariano-roque-alonso",
+        "/venta/departamentos/mariano-roque-alonso",
+        "/propiedades-en/mariano-roque-alonso"
+      ]
+    },
+    "nemby": {
+      "name": "Ñemby",
+      "for_sale": {
+        "total": 19,
+        "casas": 13,
+        "departamentos": 0,
+        "duplex": 2,
+        "terrenos": 3
+      },
+      "for_rent": {
+        "total": 11,
+        "casas": 4,
+        "departamentos": 5
+      },
+      "casas_venta_price": {
+        "listings_with_price": 12,
+        "median_usd": 71000,
+        "p25_usd": 52000,
+        "p75_usd": 96000
+      },
+      "terrenos_venta_price": null,
+      "departamentos_venta_price": null,
+      "casas_alquiler_price_month": null,
+      "departamentos_alquiler_price_month": {
+        "listings_with_price": 5,
+        "median_usd": 260,
+        "p25_usd": 180,
+        "p75_usd": 560
+      },
+      "terreno_usd_per_m2_median": null,
+      "casas_venta_median_bedrooms": 3,
+      "casa_gross_rent_yield_pct": null,
+      "departamento_gross_rent_yield_pct": null,
+      "casa_libre_pages": [
+        "/alquiler/departamentos/nemby",
+        "/venta/casas/nemby",
+        "/propiedades-en/nemby"
+      ]
+    },
+    "villa-elisa": {
+      "name": "Villa Elisa",
+      "for_sale": {
+        "total": 15,
+        "casas": 9,
+        "departamentos": 2,
+        "duplex": 2,
+        "terrenos": 1
+      },
+      "for_rent": {
+        "total": 5,
+        "casas": 2,
+        "departamentos": 0
+      },
+      "casas_venta_price": {
+        "listings_with_price": 9,
+        "median_usd": 117000,
+        "p25_usd": 74000,
+        "p75_usd": 137000
+      },
+      "terrenos_venta_price": null,
+      "departamentos_venta_price": null,
+      "casas_alquiler_price_month": null,
+      "departamentos_alquiler_price_month": null,
+      "terreno_usd_per_m2_median": null,
+      "casas_venta_median_bedrooms": 3,
+      "casa_gross_rent_yield_pct": null,
+      "departamento_gross_rent_yield_pct": null,
+      "casa_libre_pages": [
+        "/venta/casas/villa-elisa",
+        "/propiedades-en/villa-elisa"
+      ]
+    },
+    "san-bernardino": {
+      "name": "San Bernardino",
+      "for_sale": {
+        "total": 60,
+        "casas": 37,
+        "departamentos": 0,
+        "duplex": 3,
+        "terrenos": 16
+      },
+      "for_rent": {
+        "total": 13,
+        "casas": 12,
+        "departamentos": 1
+      },
+      "casas_venta_price": {
+        "listings_with_price": 35,
+        "median_usd": 250000,
+        "p25_usd": 148000,
+        "p75_usd": 415000
+      },
+      "terrenos_venta_price": {
+        "listings_with_price": 16,
+        "median_usd": 44500,
+        "p25_usd": 28000,
+        "p75_usd": 109500
+      },
+      "departamentos_venta_price": null,
+      "casas_alquiler_price_month": {
+        "listings_with_price": 12,
+        "median_usd": 2850,
+        "p25_usd": 800,
+        "p75_usd": 5300
+      },
+      "departamentos_alquiler_price_month": null,
+      "terreno_usd_per_m2_median": 65,
+      "casas_venta_median_bedrooms": 3,
+      "casa_gross_rent_yield_pct": 13.7,
+      "departamento_gross_rent_yield_pct": null,
+      "casa_libre_pages": [
+        "/alquiler/casas/san-bernardino",
+        "/venta/casas/san-bernardino",
+        "/propiedades-en/san-bernardino"
+      ]
+    },
+    "ciudad-del-este": {
+      "name": "Ciudad del Este",
+      "for_sale": {
+        "total": 104,
+        "casas": 23,
+        "departamentos": 59,
+        "duplex": 2,
+        "terrenos": 8
+      },
+      "for_rent": {
+        "total": 24,
+        "casas": 3,
+        "departamentos": 7
+      },
+      "casas_venta_price": {
+        "listings_with_price": 22,
+        "median_usd": 93000,
+        "p25_usd": 59000,
+        "p75_usd": 243000
+      },
+      "terrenos_venta_price": {
+        "listings_with_price": 6,
+        "median_usd": 43500,
+        "p25_usd": 37000,
+        "p75_usd": 49000
+      },
+      "departamentos_venta_price": {
+        "listings_with_price": 57,
+        "median_usd": 75000,
+        "p25_usd": 60000,
+        "p75_usd": 135000
+      },
+      "casas_alquiler_price_month": null,
+      "departamentos_alquiler_price_month": {
+        "listings_with_price": 6,
+        "median_usd": 1000,
+        "p25_usd": 780,
+        "p75_usd": 1150
+      },
+      "terreno_usd_per_m2_median": 85,
+      "casas_venta_median_bedrooms": 3,
+      "casa_gross_rent_yield_pct": null,
+      "departamento_gross_rent_yield_pct": 16,
+      "casa_libre_pages": [
+        "/alquiler/departamentos/ciudad-del-este",
+        "/alquiler/depositos/ciudad-del-este",
+        "/alquiler/locales/ciudad-del-este",
+        "/venta/casas/ciudad-del-este",
+        "/venta/departamentos/ciudad-del-este",
+        "/venta/locales/ciudad-del-este",
+        "/propiedades-en/ciudad-del-este"
+      ]
+    },
+    "encarnacion": {
+      "name": "Encarnación",
+      "for_sale": {
+        "total": 83,
+        "casas": 30,
+        "departamentos": 43,
+        "duplex": 2,
+        "terrenos": 4
+      },
+      "for_rent": {
+        "total": 26,
+        "casas": 4,
+        "departamentos": 17
+      },
+      "casas_venta_price": {
+        "listings_with_price": 22,
+        "median_usd": 169000,
+        "p25_usd": 89000,
+        "p75_usd": 238000
+      },
+      "terrenos_venta_price": null,
+      "departamentos_venta_price": {
+        "listings_with_price": 34,
+        "median_usd": 61000,
+        "p25_usd": 49000,
+        "p75_usd": 89000
+      },
+      "casas_alquiler_price_month": null,
+      "departamentos_alquiler_price_month": {
+        "listings_with_price": 17,
+        "median_usd": 500,
+        "p25_usd": 440,
+        "p75_usd": 700
+      },
+      "terreno_usd_per_m2_median": null,
+      "casas_venta_median_bedrooms": 3,
+      "casa_gross_rent_yield_pct": null,
+      "departamento_gross_rent_yield_pct": 9.8,
+      "casa_libre_pages": [
+        "/alquiler/departamentos/encarnacion",
+        "/venta/casas/encarnacion",
+        "/venta/departamentos/encarnacion",
+        "/propiedades-en/encarnacion"
+      ]
+    },
+    "limpio": {
+      "name": "Limpio",
+      "for_sale": {
+        "total": 33,
+        "casas": 14,
+        "departamentos": 9,
+        "duplex": 2,
+        "terrenos": 7
+      },
+      "for_rent": {
+        "total": 7,
+        "casas": 1,
+        "departamentos": 4
+      },
+      "casas_venta_price": {
+        "listings_with_price": 14,
+        "median_usd": 63000,
+        "p25_usd": 54000,
+        "p75_usd": 81000
+      },
+      "terrenos_venta_price": {
+        "listings_with_price": 7,
+        "median_usd": 60000,
+        "p25_usd": 20500,
+        "p75_usd": 174000
+      },
+      "departamentos_venta_price": {
+        "listings_with_price": 8,
+        "median_usd": 52000,
+        "p25_usd": 49000,
+        "p75_usd": 79000
+      },
+      "casas_alquiler_price_month": null,
+      "departamentos_alquiler_price_month": null,
+      "terreno_usd_per_m2_median": null,
+      "casas_venta_median_bedrooms": 2,
+      "casa_gross_rent_yield_pct": null,
+      "departamento_gross_rent_yield_pct": null,
+      "casa_libre_pages": []
+    },
+    "aregua": {
+      "name": "Areguá",
+      "for_sale": {
+        "total": 16,
+        "casas": 9,
+        "departamentos": 0,
+        "duplex": 0,
+        "terrenos": 4
+      },
+      "for_rent": {
+        "total": 3,
+        "casas": 3,
+        "departamentos": 0
+      },
+      "casas_venta_price": {
+        "listings_with_price": 9,
+        "median_usd": 145000,
+        "p25_usd": 99000,
+        "p75_usd": 184000
+      },
+      "terrenos_venta_price": null,
+      "departamentos_venta_price": null,
+      "casas_alquiler_price_month": null,
+      "departamentos_alquiler_price_month": null,
+      "terreno_usd_per_m2_median": null,
+      "casas_venta_median_bedrooms": 3,
+      "casa_gross_rent_yield_pct": null,
+      "departamento_gross_rent_yield_pct": null,
+      "casa_libre_pages": []
+    }
+  },
+  "notes": [
+    "Asking prices of listings published on Casa-Libre (most come from agencies), not closing prices.",
+    "Medians and ranges only where at least 5 listings have a price; null = too few to say.",
+    "gross_rent_yield_pct = median monthly rent x 12 / median sale price, same city and type. A rough comparison of asking prices, not a return on investment.",
+    "USD figures come from each listing's price_usd. Convert to guaranies with pyg_per_usd and say it is approximate."
+  ]
+}
