@@ -1,5 +1,6 @@
 'use client';
 import { useRef, useState } from 'react';
+import { capture, distinctId, getAttribution } from '@/lib/analytics';
 import { usePathname } from 'next/navigation';
 import { FORM, OWNER, formCities } from '@/lib/site';
 import { COUNTRIES } from '@/lib/countries';
@@ -11,6 +12,7 @@ const push = (event, data) => {
   if (typeof window === 'undefined') return;
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({ event, ...data }); // never names or phone numbers
+  capture(event, data); // PostHog too: the same allow-listed fields, never names, phones or emails
 };
 
 /** Two steps on the same page: first operation, city, portfolio and role (dropdowns, nothing personal), then name, WhatsApp and email. */
@@ -53,7 +55,7 @@ export default function LeadForm({ location = 'hero', heading, country = 'py' })
       const res = await fetch('/api/lead/', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ ...v, page: path, location, elapsed: Date.now() - startedAt.current, country, consentText: consentText(country) }),
+        body: JSON.stringify({ ...v, ...getAttribution(), posthog_distinct_id: distinctId(), page: path, location, elapsed: Date.now() - startedAt.current, country, consentText: consentText(country) }),
       });
       const out = await res.json().catch(() => ({}));
       if (!res.ok || !out.ok) throw new Error(out.error || 'error');

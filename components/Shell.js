@@ -5,6 +5,7 @@ import { COUNTRIES } from '@/lib/countries';
 import { getGuides } from '@/lib/content';
 import { Header, Footer } from '@/components/Chrome';
 import Track from '@/components/Track';
+import Analytics from '@/components/Analytics';
 
 // Every country has its own root layout (app/(py)/layout.js, app/(bo)/layout.js…) so each page's <html lang>
 // is right (es-PY, es-BO…). They all render this shell; only the country changes.
@@ -32,6 +33,7 @@ export default async function Shell({ cc, children }) {
         {children}
         <Footer guides={guides} cc={cc} />
         <Track />
+        <Analytics cc={cc} />
         {SITE.gtmId ? (
           <script
             dangerouslySetInnerHTML={{

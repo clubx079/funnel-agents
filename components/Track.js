@@ -1,7 +1,8 @@
 'use client';
 import { useEffect } from 'react';
+import { capture } from '@/lib/analytics';
 
-/** Pushes one dataLayer event per click on a link to Casa-Libre, with where on the page the link sits.
+/** Pushes one dataLayer event (and a PostHog cl_click) per click on a link to Casa-Libre, with where on the page the link sits.
  *  No personal data. Works with or without Google Tag Manager. */
 export default function Track() {
   useEffect(() => {
@@ -16,6 +17,9 @@ export default function Track() {
         link_url: a.href,
         page_path: window.location.pathname,
       });
+      let utmContent = '';
+      try { utmContent = new URL(a.href).searchParams.get('utm_content') || ''; } catch { /* ignore */ }
+      capture('cl_click', { href: a.href, utm_content: utmContent, position: pos ? pos.getAttribute('data-pos') : 'other' });
     };
     document.addEventListener('click', onClick);
     return () => document.removeEventListener('click', onClick);

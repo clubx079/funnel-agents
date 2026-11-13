@@ -1,18 +1,17 @@
-import { appendFile, mkdir } from 'node:fs/promises';
-import path from 'node:path';
-import { FORM, SITE, formCities } from '@/lib/site';
+import { FORM, formCities } from '@/lib/site';
 import { COUNTRIES, COUNTRY_CODES } from '@/lib/countries';
 import { formCopy, consentText } from '@/lib/formCopy';
 import { cleanEmail, normalizeWhatsapp } from '@/lib/lead';
+import { saveLead, attributionOf } from '@/lib/leadStore';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 // Where leads go (same pattern as the owners site, vender-mi-casa):
-//  1. Always appended to data/leads.jsonl on this server (one JSON object per line). This folder is not public and not in git.
-//  2. If LEADS_WEBHOOK_URL is set, the same object is also POSTed there (LEADS_WEBHOOK_SECRET is sent as x-lead-secret).
-// This route never talks to a database by itself.
-const FILE = path.join(process.cwd(), 'data', 'leads.jsonl');
+//  1. The Casa-Libre database of the form's country (public.funnel_leads; lib/leadStore.js, env AIROBASE_URL_<CC> /
+//     AIROBASE_SECRET_KEY_<CC>, read at request time). When that is not configured or fails, data/leads.jsonl on this
+//     server (one JSON object per line; not public, not in git), so no lead is lost.
+//  2. If LEADS_WEBHOOK_URL is set, the same row is also POSTed there (LEADS_WEBHOOK_SECRET is sent as x-lead-secret).
 const hits = new Map(); // ip -> timestamps, for a simple limit of 5 leads per 10 minutes
 
 const bad = (error, status = 400) => Response.json({ ok: false, error }, { status });
@@ -44,29 +43,31 @@ export async function POST(request) {
   if (email === null) return bad(T.errEmail);
 
   const lead = {
-    receivedAt: new Date(now).toISOString(),
-    site: SITE.name,
-    page: String(b.page || '').slice(0, 200),
-    formLocation: String(b.location || '').slice(0, 20),
+    site: 'agents',
     country,
+    page: String(b.page || '').slice(0, 200),
+    form_location: String(b.location || '').slice(0, 20),
     operation: b.operation,
     city: b.city,
+    property_type: null,
+    has_title: null,
     portfolio: b.portfolio,
     role: b.role,
+    agency: String(b.agency || '').trim().slice(0, 100) || null,
     name,
-    agency: String(b.agency || '').trim().slice(0, 100),
     whatsapp,
-    email,
+    email: email || null,
     // Proof of consent: sending the form is the consent. The line shown under the button, and when it was sent.
     consent: { contact: true, bySubmit: true, text: String(b.consentText || consentText(country)).slice(0, 400), at: new Date(now).toISOString() },
+    ...attributionOf(b), // utm, referrer, posthog_distinct_id
     ip,
-    userAgent: (request.headers.get('user-agent') || '').slice(0, 200),
+    user_agent: (request.headers.get('user-agent') || '').slice(0, 200),
   };
 
   try {
-    await mkdir(path.dirname(FILE), { recursive: true });
-    await appendFile(FILE, JSON.stringify(lead) + '\n', 'utf8');
-  } catch {
+    await saveLead(lead);
+  } catch (e) {
+    console.error(`[lead] could not save the lead anywhere: ${e?.code || e?.message || e}`);
     return bad('No pudimos guardar tus datos. Probá de nuevo en un momento.', 500);
   }
   hits.set(ip, [...recent, now]);
